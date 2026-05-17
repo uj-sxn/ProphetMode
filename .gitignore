@@ -13,7 +13,6 @@ __pycache__/
 dist/
 build/
 
-# AI assistant traces (don't show it was AI-built)
 .claude/
 .cursor/
 .aider*
