@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: prophetmode
+    env: python
+    region: ohio
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: ANTHROPIC_MODEL
+        value: anthropic/claude-sonnet-4-5
+      - key: TAVILY_API_KEY
+        sync: false
+      - key: PA_SERVER_API_KEY
+        sync: false
+      - key: PA_SERVER_URL
+        value: https://api.aiprophet.dev

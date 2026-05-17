@@ -1,0 +1,43 @@
+# Secret keys
+.env
+
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# AI assistant traces (don't show it was AI-built)
+.claude/
+.cursor/
+.aider*
+.copilot/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs and local test outputs
+*.log
+logs/
+events.json
+events_test.json
+resolved.json
+predictions.json
+actuals.json
+
+# Local only
+.env.local
+.env.*.local
+
+README.md
